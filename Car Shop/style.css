@@ -29,6 +29,10 @@ h2 {
   color: black;
   padding: 3vw; }
 
+#big {
+  position: sticky;
+  top: 0; }
+
 #small {
   margin: 0 5%;
   width: 90%;
@@ -66,8 +70,7 @@ h2 {
   justify-content: center; }
   #bigbox #bild {
     margin: 2%;
-    height: 80%;
-    background-color: green; }
+    height: 80%; }
     #bigbox #bild img {
       max-width: 100%;
       max-height: 100%; }
@@ -76,8 +79,7 @@ h2 {
     width: 50%;
     height: 80%;
     display: flex;
-    flex-flow: row wrap;
-    background-color: hotpink; }
+    flex-flow: row wrap; }
     #bigbox #details #autoname {
       font-weight: bold;
       font-size: 5vw; }

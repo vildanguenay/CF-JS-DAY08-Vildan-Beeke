@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Example</title>
+  <style type="text/css" media="screen">
+   img{width: 200px}
+   .bigpic{width: 400px}
+  </style>
+</head>
+<body>
+  <div id="large"></div>
+  <div id="test"></div>
+
+<script src="data.json"></script>
+  <script>
+     var box=document.getElementById("test");
+     var largeoutput= document.getElementById("large");
+     var btn= document.getElementsByClassName("btn");
+     /creating content/
+      for(var i=0;i<person.length;i++){
+      box.innerHTML+= `<div class="next"><p>Hello there, ${person[i].name}</p>
+      <p>My Age: ${person[i].age} </p><img src="${person[i].pic}"></div><button class="btn" id="${i}">Click me</button>`;
+  }
+  /creating event listeners for buttons/
+      for(var i=0;i<btn.length;i++){
+  btn[i].addEventListener("click",function(){bigDisplay(this.getAttribute("id"))},false);
+    }
+   function bigDisplay(i){
+     largeoutput.innerHTML= `<b><p>Hello from up here!</p>
+     <img src="${person[i].pic}" class="bigpic"></b>`
+   }
+  </script>
+</body>
+</html>
