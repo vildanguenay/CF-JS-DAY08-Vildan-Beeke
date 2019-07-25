@@ -29,13 +29,13 @@ h2 {
   color: black;
   padding: 3vw; }
 
-content {
+#small {
   margin: 0 5%;
   width: 90%;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between; }
-  content article {
+  #small article {
     width: 30%;
     background-color: lightgrey;
     display: flex;
@@ -43,12 +43,12 @@ content {
     flex-flow: column wrap;
     margin-bottom: 2%;
     color: white; }
-    content article img {
+    #small article img {
       flex: 2;
       width: 86%;
       margin: 7%;
       object-fit: cover; }
-    content article h3 {
+    #small article h3 {
       flex: 1;
       background-color: black;
       padding: 5%;

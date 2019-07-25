@@ -6,7 +6,7 @@
 	<title></title>
 	<link rel="stylesheet" href="style.css">
 	<!-- <script src="script.js"></script> -->
-	<script src="data.json"></script>
+	
 
 </head>
 <body>
@@ -21,28 +21,29 @@
 	
 	<h2>OUR CARS</h2>
 
-	<div id="test"></div>
-			
-	<content>
+	<div id="big"></div>	
+	<div id="small"></div>
 
-	</content>
 
 	<footer>
 		<h2>Car  shop - 2019</h2>
 	</footer>
-
+<script src="data.json"></script>
 <script>		
+	var overview = document.getElementById("small");
+	var box = document.getElementById("big");
+	var art = document.getElementsByTagName("article");
 
 	for(var i = 0; i < cars.length; i++) {
-
-		document.getElementsByTagName("content")[0].innerHTML += '<article><img src="' + cars[i].carImage + '"> <h3>' + cars[i].carName + '</h3></article>'
+		overview.innerHTML += `<article id="${i}"><img src= ${cars[i].carImage}> <h3> ${cars[i].carName} </h3></article>`
 	}
 	
-
-	var box = document.getElementById("test");
-
-	for(i = 0; i < cars.length; i++) {
-		box.innerHTML +=
+	for(var i=0;i<art.length;i++){
+		art[i].addEventListener("click", function(){enlarge(this.getAttribute("id"))},false);
+	}
+	
+	function enlarge(i){
+		box.innerHTML =
 		`<div id="bigbox">
 			<div id="bild"><img src="${cars[i].carImage}"></div>
 			<div id="details"><p id="autoname">${cars[i].carName}</p>
@@ -52,8 +53,6 @@
 			</div>
 		</div><br>`;
 	}
-
-	// console.log(box)
 
 </script>
 
