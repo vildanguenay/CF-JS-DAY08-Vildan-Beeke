@@ -41,6 +41,36 @@
 	for(var i=0;i<art.length;i++){
 		art[i].addEventListener("click", function(){enlarge(this.getAttribute("id"))},false);
 	}
+
+	// document.body.addEventListener("click", function(){
+	// 	box.style.display = "none";
+	// },true);
+	
+
+	// document.div(id="small").addEventListener("click", function{
+	// 	box.style.display = "none"();
+	// }, true);
+
+
+	// body.addEventListener("click", function() {
+	// 	var id = this.id;
+	// 	if (id != "box"){
+	// 		box.style.display = "none";
+	// 	}
+	// 	else {
+	// 		return;
+	// 	}
+	// 	true;
+	// })
+
+
+		// (){
+		// if (box.style.display === "none") {
+		// enlarge(this.getAttribute("id"))},false);
+		// }
+		// else {
+		// 	box.style.display = "none";
+		// }
 	
 	function enlarge(i){
 		if (box.style.display === "none") {
@@ -57,7 +87,7 @@
 				<div class="smolboy"><p>Fun Factor: ${cars[i].carFun}</p></div>
 				<p id="price">PRICE: ${cars[i].carPrice}€</p> 
 			</div>
-		</div><br>`;
+		</div>`;
 	}
 
 </script>
