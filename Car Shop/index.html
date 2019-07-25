@@ -43,6 +43,12 @@
 	}
 	
 	function enlarge(i){
+		if (box.style.display === "none") {
+			box.style.display = "flex";
+		}
+		else {
+			box.style.display = "none";
+		}
 		box.innerHTML =
 		`<div id="bigbox">
 			<div id="bild"><img src="${cars[i].carImage}"></div>
