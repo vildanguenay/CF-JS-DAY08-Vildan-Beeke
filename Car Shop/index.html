@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="style.css">
+	<!-- <script src="script.js"></script> -->
+	<script src="data.json"></script>
+
+</head>
+<body>
+	<header>
+		<h1>Car shop logo</h1>
+		<nav>
+			<ul>
+				<li><a href="#">Navigation</a></li>
+			</ul>
+		</nav>
+	</header>	
+	
+	<h2>OUR CARS</h2>
+
+	<div id="test"></div>
+			
+	<content>
+
+	</content>
+
+	<footer>
+		<h2>Car  shop - 2019</h2>
+	</footer>
+
+<script>		
+
+	for(var i = 0; i < cars.length; i++) {
+
+		document.getElementsByTagName("content")[0].innerHTML += '<article><img src="' + cars[i].carImage + '"> <h3>' + cars[i].carName + '</h3></article>'
+	}
+	
+
+	var box = document.getElementById("test");
+
+	for(i = 0; i < cars.length; i++) {
+		box.innerHTML +=
+		`<div id="bigbox">
+			<div id="bild"><img src="${cars[i].carImage}"></div>
+			<div id="details"><p id="autoname">${cars[i].carName}</p>
+				<div class="smolboy"><p>${cars[i].carYear}</p></div>
+				<div class="smolboy"><p>Fun Factor: ${cars[i].carFun}</p></div>
+				<p id="price">PRICE: ${cars[i].carPrice}€</p> 
+			</div>
+		</div><br>`;
+	}
+
+	// console.log(box)
+
+</script>
+
+</body>
+</html>
+
+<!-- innerHTML += 
+check
+back tick -->

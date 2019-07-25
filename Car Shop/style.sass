@@ -1,0 +1,114 @@
+*
+	margin: 0
+	padding: 0
+
+header
+	background-color: black
+	width: 100%
+	color: white //removed from * because of color for autoname
+
+	h1
+		margin: 0
+		font-size: 250%
+		padding: 5vw 2vw
+
+	nav
+		background-color: darkgrey
+
+		ul 
+			list-style: none
+			padding-left: 0
+
+			li a
+				text-decoration: none
+				padding: 5vw 2vw
+				font-size: 150%
+				color: white
+				font-weight: bold
+
+h2
+	font-size: 200%
+	text-transform: uppercase
+	text-align: center
+	color: black
+	padding: 3vw
+
+content
+	margin: 0 5%
+	width: 90%
+	display: flex
+	flex-flow: row wrap
+	justify-content: space-between
+
+	article
+		width: 30%
+		background-color: lightgrey
+		display: flex
+		justify-content: center
+		flex-flow: column wrap
+		margin-bottom: 2%
+		color: white //removed from * because of color for autoname
+
+		img
+			flex: 2
+			width: 86%
+			margin: 7%
+			object-fit: cover
+
+		h3
+			flex: 1
+			background-color: black
+			padding: 5%
+			text-align: center
+			margin: 0
+
+#bigbox
+	margin: 0 5% //
+	width: 90%
+	height: 40vw
+	display: flex
+	flex-direction: column
+	flex-wrap: wrap
+	background-color: lightgrey //
+	justify-content: center
+
+	#bild
+		margin: 2%
+		// width: 50%
+		height: 80%
+		background-color: green
+		img 
+			max-width: 100% //
+			max-height: 100% // 
+
+	#details
+		margin: 2%
+		width: 50%
+		height: 80%
+		display: flex
+		flex-flow: row wrap
+		background-color: hotpink
+
+		#autoname
+			font-weight: bold
+			font-size:  5vw//
+
+		.smolboy
+			height: 15%
+			width: 100%
+			background-color: #A4A4A4 //
+
+		#price
+			font-size: 6vw //
+			font-weight: bold
+			color: #5D5C5B
+			align-self: flex-end //
+
+footer
+	background-color: black
+
+	h2 
+		color: white
+		text-transform: none
+
+
